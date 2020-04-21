@@ -1,5 +1,5 @@
 # BaiduWenkuSpider
-实现对百度文库文档以pdf形式原格式下载
+以web server形式实现对百度文库文档以pdf形式原格式下载
 如果觉得可以的话，可以点个**🌟**哦
 
 
