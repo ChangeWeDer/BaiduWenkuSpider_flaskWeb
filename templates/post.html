@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link rel="stylesheet" href="../static/css/style.css">
+   <title>百度文库下载</title>
+   <style>
+      body {
+         background-color: #E8E8E8;
+      }
+
+      .shadow {
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         left: 0;
+         top: 0;
+         z-index: 998;
+         background-color: #000;
+         opacity: 0.6;
+         display: none;
+      }
+   </style>
+</head>
+
+<body>
+
+   <div style="text-align: center; margin-top: 50px;">
+      <h1>仅供学习交流使用</h1>
+
+   <div class="container">
+      <form action="/post" class="parent" method="post">
+         <input type="text" name="url" placeholder="   输入文库链接">
+         <input type="submit" value="点击下载" onclick="fn()">
+      </form>
+   </div>
+   
+{% if get_flashed_messages()[1] %}
+   <div class="container">
+      <a href="{{ get_flashed_messages()[2] }}" class="a_demo_two">
+         预览（不支持ppt）
+      </a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="{{ get_flashed_messages()[0] }}" class="a_demo_two">
+         不废话，下载
+      </a>
+   </div>
+
+   {% endif %}
+   <div class="shadow" id="shadow"></div>
+   <img src="../static/loading.gif" alt="" id="img" style="
+display: none;
+position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+   -khtml-transform: translate(-50%,-50%);
+   z-index:999;" />
+
+
+</div>
+<div style="text-align: center; margin-top: 50px;">
+   <p><a href="https://www.upstudy.top">博客地址</a></p>
+</div>
+<div style="text-align: center; margin-top: 50px;">
+   <p><a href="https://www.upstudy.top">Github地址</a></p>
+</div>
+</body>
+<script>
+
+
+   function fn() {
+      document.getElementById('img').style.display = "block";
+      document.getElementById('shadow').style.display = "block";
+   }
+
+</script>
+
+</html>

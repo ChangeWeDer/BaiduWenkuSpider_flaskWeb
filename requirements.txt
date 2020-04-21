@@ -1,0 +1,8 @@
+requests
+chardet
+bs4
+Pillow
+pdfkit
+flask
+imgkit
+img2pdf
