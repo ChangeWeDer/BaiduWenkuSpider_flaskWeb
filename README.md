@@ -6,7 +6,7 @@
 ## 前言
 首先，这是根据
 [https://github.com/M010K/BaiduWenkuSpider](https://github.com/M010K/BaiduWenkuSpider)
-的项目进行一点修改得到的基于flask框架的python web项目
+的项目进行一点修改得到的基于flask框架的python web项目，
 可以对百度文库的文档转换为pdf格式进行下载
 
 **[博客地址](https://www.upstudy.top/index.php/archives/21/)**
@@ -36,6 +36,7 @@ cd到项目文件夹中使用命令，直接一键安装
 
 下载后按当前系统
 配置环境变量即可
+
 **window：**
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200421234401464.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODMzMg==,size_16,color_FFFFFF,t_70)
 
