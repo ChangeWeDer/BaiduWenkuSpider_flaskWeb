@@ -38,11 +38,15 @@ cd到项目文件夹中使用命令，直接一键安装
 配置环境变量即可
 **window：**
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200421234401464.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODMzMg==,size_16,color_FFFFFF,t_70)
+
 **Centos：**
+
 [https://blog.csdn.net/LookingTomorrow/article/details/93513457](https://blog.csdn.net/LookingTomorrow/article/details/93513457)
 
 #### 四、直接运行GetAll.py文件，访问http://127.0.0.1:5000/post 即可（运行在服务器端则访问IP：5000/post）
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200421234635967.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3ODMzMg==,size_16,color_FFFFFF,t_70)
+
 ps：ppt格式的文档不支持预览
 #### 五、Github源码下载地址
 [https://github.com/ChangeWeDer/BaiduWenkuSpider_flaskWeb](https://github.com/ChangeWeDer/BaiduWenkuSpider_flaskWeb)
