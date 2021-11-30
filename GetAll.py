@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*
 from flask import Flask,render_template, redirect, url_for, request, flash, get_flashed_messages , send_from_directory
-
+from flask.helpers import safe_join
 import requests
 import os
 from requests.exceptions import ReadTimeout
@@ -696,7 +696,7 @@ def internal_server_error(e):
 # 文件下载
 @app.route("/<path:url>/<path:filename>")
 def downloader(url,filename):
-    dirpath = os.path.join(app.root_path, url)  # 下载文件目录路径
+    dirpath = safe_join(app.root_path, url)  # 下载文件目录路径
     return send_from_directory(dirpath, filename, as_attachment=True)  # as_attachment=True 一定要写，不然会变成打开，而不是下载
 
 # 文件预览
